@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1112</width>
+    <height>804</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1112</width>
+    <height>804</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: black;
+color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="topBanner">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>801</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 211, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="playlist_name">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>284</width>
+       <height>67</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font: 30pt &quot;Segoe UI Black&quot;;
+padding: 0px;
+background-color: rgba(0,0,0,0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Local music</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QListWidget" name="playlist">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>200</y>
+      <width>781</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget{
+background-color: transparent;
+font: 63 18pt &quot;Segoe UI Black&quot;;
+}
+QListWidget::item{
+background-color: rgba(0,0,0,50);
+border-bottom: 1px solid grey;
+border-radius: 0px;
+height: 50px;
+padding: 5px;
+margin: 5px;
+}
+QListWidget::item:hover{
+background-color: rgba(255,255,255,125);
+border: 1px solid green;
+border-radius: 5px;
+height: 70px;
+padding: 5px;
+margin: 5px;
+}
+QListWidget::item:selected{
+color: green;
+background-color: black;
+border-left: 8px solid green;
+border-radius: 0px;	
+font: 25 20pt &quot;Segoe UI&quot;;
+}
+QScrollBar::handle:vertical{
+border-radius: 2px;
+}
+QScrollBar::</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Tsong</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pong</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kong</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Elley Duhe</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hus</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>New Item</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>hahah</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ha</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>301</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background-color: rgba(255,255,255,50);
+border-radius: 10px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QListWidget" name="playlists">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>11</y>
+       <width>281</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget{
+font: 63 20pt &quot;Segoe UI&quot;;
+}
+QListWidget::item{
+margin: 10px;
+border-radius: 5px;
+width: 100%;
+background-color: rgba(255,255,255, 75);
+}
+QListWidget::item:hover{
+border-left: 4px solid green;
+}
+QListWidget::item:selected{
+border-left: 6px solid green;
+color: green;
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Rise From Ashes! Gaming Tracks</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tamil Songs</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NCS10</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="playlist_name_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+font: 25pt &quot;Segoe UI Light&quot;;
+padding: 0px;
+background-color: rgba(0,0,0,0);
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;|&lt;/span&gt; playlists&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addPlalistButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Create new...</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 1px solid green;
+background-color: green;
+font: 12pt &quot;Segoe UI&quot;;
+padding: 2px;
+}
+QPushButton:hover{
+background-color: darkgreen;
+}</string>
+    </property>
+    <property name="text">
+     <string>Add new +</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>630</y>
+      <width>1091</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background-color: rgb(83, 83, 83);
+border-radius: 10px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="coverImage">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>-2</y>
+       <width>38</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+background-color: white;
+border-radius: 0px;
+height: 20px;
+width: 80px;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;album&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>-2</y>
+       <width>141</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetNoConstraint</enum>
+      </property>
+      <item>
+       <widget class="QLabel" name="songName">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font: 15pt &quot;Segoe UI Light&quot;;
+padding: 0px;
+background-color: rgba(0,0,0,0);
+}</string>
+        </property>
+        <property name="text">
+         <string>song name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="artistName">
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+font: 10pt &quot;Segoe UI Semibold&quot;;
+padding: 0px;
+background-color: rgba(0,0,0,0);
+}</string>
+        </property>
+        <property name="text">
+         <string>artist</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="prevSongButton">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>60</y>
+       <width>51</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>1</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+height: 50%;
+border-radius: 25%;
+font: 20pt &quot;Segoe Fluent Icons&quot;;
+}
+QPushButton:hover{
+background-color: rgba(255,255,255,50);
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="playPauseButton">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>60</y>
+       <width>51</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>1</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+height: 50%;
+border-radius: 25%;
+	font: 20pt &quot;Segoe UI Symbol&quot;;
+}
+QPushButton:hover{
+background-color: rgba(255,255,255,50);
+}</string>
+     </property>
+     <property name="text">
+      <string>⏯</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="nextSongButton">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>60</y>
+       <width>51</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>1</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+height: 50%;
+border-radius: 25%;
+	font: 20pt &quot;Segoe Fluent Icons&quot;;
+}
+QPushButton:hover{
+background-color: rgba(255,255,255,50);
+}</string>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="volumeSlider">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>20</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider{
+background-color: None;
+}
+QSlider::groove:horizontal {
+    border-radius: 1px;
+    height: 10px;
+    margin: 0px;
+    background-color: rgb(52, 59, 72);
+}
+QSlider::groove:horizontal:hover {
+    background-color: rgb(55, 62, 76);
+}
+QSlider::handle:horizontal {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    height: 40px;
+    width: 20px;
+    margin: 0;
+    border-radius: 10px;
+    padding: -20px 0px;
+}
+QSlider::handle:horizontal:hover {
+    background-color: rgb(155, 180, 255);
+}
+QSlider::handle:horizontal:pressed {
+    background-color: rgb(65, 255, 195);
+}</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>651</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider{
+background-color: transparent;
+}</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="timeLabel">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font: 10pt &quot;Segoe UI Semibold&quot;;
+padding: 0px;
+background-color: rgba(0,0,0,0);
+}</string>
+     </property>
+     <property name="text">
+      <string>00:00</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1112</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionOpen_folder"/>
+   </widget>
+   <widget class="QMenu" name="menuTheme">
+    <property name="title">
+     <string>Theme</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTheme"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open...</string>
+   </property>
+  </action>
+  <action name="actionOpen_folder">
+   <property name="text">
+    <string>Open folder...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
